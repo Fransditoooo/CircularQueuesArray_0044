@@ -46,4 +46,9 @@ public:
         }
         cout << "\nElement terhapus:" << queues_array[FRONT] << "\n";
 
- 
+        //cek jika antrian hanya memiliki satu element
+        if (FRONT == REAR) {
+            FRONT = -1;
+            REAR = -1;
+        }
+       
